@@ -1,0 +1,1079 @@
+\begin{solution}{2.1}
+Джордж может поймать Усаму. Пройдемся подряд по всем пещерам, дважды осмотрим последнюю и пройдемся в обратном порядке.
+\end{solution}
+\begin{solution}{2.2}
+Саддам. За месяц Саддам может построить одну треть завода. За 13 месяцев у него будет 13 третей завода. Начнем их достраивать. Их тут же разрушают, но 13-ую треть мы достраиваем и 13, и 14 числа. Завод готов.
+\end{solution}
+\begin{solution}{2.3}
+\begin{enumerate}
+\item начнем с угла вести разделительную линию, она и будет соединять две противоположные стороны;
+\item у первого
+\end{enumerate}
+\end{solution}
+\begin{solution}{2.4}
+
+Чтобы помешать акционеру провести $d$ кандидатов конкуренты должны провести $D-d+1$ своего кандидата. Оптимально распределить имеющиеся голоса поровну.
+В непрерывном случае нужно выбрать минимальное $n$ удовлетворяющее неравенству: $\frac{nD}{d}>\frac{D(N-n)}{D-d+1}$. Получаем $n_{min}= \left\lfloor \frac{Nd}{D+1}\right\rfloor+1$. \par
+В дискретном случае неравенство заменяется на
+$\left\lfloor \frac{nD}{d}\right\rfloor>\left\lfloor \frac{D(N-n)}{D-d+1}\right\rfloor$ \par
+Поэтому алгоритм выглядит так:
+Пробуем $n=\left\lfloor \frac{Nd}{D+1}\right\rfloor+1$ \par
+Если оно подходит в неравенство, то объявляем его ответом. \par
+Если оно не подходит в неравенство, то объявляем ответом $n=\left\lfloor \frac{Nd}{D+1}\right\rfloor+2$.
+\end{solution}
+\begin{solution}{2.5}
+Последний называет остаток от деления на $k$ суммы цветов шляп впереди стоящих, гарантировано спасены $(n-1)$.
+\end{solution}
+\begin{solution}{2.6}
+Первый день прийти в особой рубашке, затем копировать действия Васи.
+\end{solution}
+\begin{solution}{2.7}
+\begin{enumerate}
+\item
+ нет, нужно считать условное ожидание, а для него нужны априорные вероятности;
+ \item для существования условного м.о. нужна конечность обычного м.о. Здесь обычное м.о. равно плюс бесконечности\ldots
+\end{enumerate}
+\end{solution}
+\begin{solution}{3.1}
+ ++, --, ++, -+, ++, -+ и далее -+
+\end{solution}
+\begin{solution}{3.2}
+ цикл: -,+,+,+,+,-
+\end{solution}
+\begin{solution}{3.3}
+
+\end{solution}
+\begin{solution}{3.4}
+
+\end{solution}
+\begin{solution}{3.5}
+
+\end{solution}
+\begin{solution}{3.6}
+\end{solution}
+\begin{solution}{3.7}
+
+\end{solution}
+\begin{solution}{3.8}
+Выигрышные позиции при малых $n$: 1, 2, 3, 5, 7, 9, 10, 12, 14, 16, 18, 19\ldots
+
+Можно заметить, что выигрышные позиции остоят друг от друга на расстояние 1 или на расстояние 2. На двумерной доске (вроде бы?)  если аккуратно действовать то можно доказать, что начиная с 6-ой разницы есть цикл разниц вида: (1-2-2-2-2-1-2-)
+\end{solution}
+\begin{solution}{3.9}
+
+\end{solution}
+\begin{solution}{3.10}
+
+\end{solution}
+\begin{solution}{3.11}
+
+\end{solution}
+\begin{solution}{3.12}
+
+\end{solution}
+\begin{solution}{3.13}
+\item нет, могут быть <<плохие>> ходы \par
+\item да, по определению функции
+\end{solution}
+\begin{solution}{3.14}
+
+\end{solution}
+\begin{solution}{3.15}
+
+\end{solution}
+\begin{solution}{3.16}
+(б) разделить кучку 7 на 1+6 или 2+5 или 3+4
+\end{solution}
+\begin{solution}{3.17}
+
+\end{solution}
+\begin{solution}{3.18}
+
+\end{solution}
+\begin{solution}{3.19}
+
+\end{solution}
+\begin{solution}{3.20}
+
+\end{solution}
+\begin{solution}{3.21}
+
+\end{solution}
+\begin{solution}{3.22}
+
+\end{solution}
+\begin{solution}{3.23}
+
+\end{solution}
+\begin{solution}{3.24}
+
+\end{solution}
+\begin{solution}{3.25}
+
+\end{solution}
+\begin{solution}{4.2}
+\end{solution}
+\begin{solution}{4.3}
+\end{solution}
+\begin{solution}{4.4}
+Два игрока. Множество стратегий первого $S_{1}=[0;+\infty)$, множество стратегий второго $S_{2}=[0;+\infty)$. Платежные функции: $u_{1}=\frac{1.5(s_{1}+s_{2})}{2}-s_{1}$,  $u_{2}=\frac{1.5(s_{1}+s_{2})}{2}-s_{2}$. В матричной форме не представляется, т.к. стратегий у каждого игрока бесконечное количество. Равновесие по Нэшу $s_{1}=0$, $s_{2}=0$. Стратегия $s_{1}=0$ строго доминирует любую стратегию первого игрока, аналогично со стратегией $s_{2}=0$.
+\end{solution}
+\begin{solution}{4.5}
+Эту ситуацию можно смоделировать так: $n$ игроков, у каждого две стратегии: стоять или сидеть. Равновесий по Нэшу два: главарь сидит и все сидят, главарь стоит и все стоят.
+\end{solution}
+\begin{solution}{4.6}
+(б) 1;
+
+(в) 2;
+
+(г) $\left\lfloor  \frac{n+1}{2} \right\rfloor$
+\end{solution}
+\begin{solution}{4.7}
+
+\end{solution}
+\begin{solution}{4.8}
+
+\end{solution}
+\begin{solution}{4.9}
+
+\end{solution}
+\begin{solution}{4.10}
+да, конечно
+\end{solution}
+\begin{solution}{4.11}
+
+\end{solution}
+\begin{solution}{4.12}
+
+\end{solution}
+\begin{solution}{4.13}
+
+\end{solution}
+\begin{solution}{4.14}
+
+\end{solution}
+\begin{solution}{4.15}
+\end{solution}
+\begin{solution}{4.16}
+\end{solution}
+\begin{solution}{4.17}
+4 равновесия
+\end{solution}
+\begin{solution}{4.18}
+
+\end{solution}
+\begin{solution}{4.19}
+
+\end{solution}
+\begin{solution}{4.20}
+
+\end{solution}
+\begin{solution}{4.21}
+
+\end{solution}
+\begin{solution}{4.22}
+
+\end{solution}
+\begin{solution}{4.23}
+
+\end{solution}
+\begin{solution}{4.24}
+
+\end{solution}
+\begin{solution}{4.25}
+
+\end{solution}
+\begin{solution}{4.26}
+
+\end{solution}
+\begin{solution}{4.27}
+
+\end{solution}
+\begin{solution}{4.28}
+
+\end{solution}
+\begin{solution}{4.29}
+
+Достаточно рассмотреть отрезок вместо круга. (?)\ldots
+\end{solution}
+\begin{solution}{4.30}
+
+\end{solution}
+\begin{solution}{4.31}
+нет
+\end{solution}
+\begin{solution}{4.32}
+обе партии голосуют <<за>> и денег не получают
+\end{solution}
+\begin{solution}{4.33}
+
+\end{solution}
+\begin{solution}{4.34}
+
+\end{solution}
+\begin{solution}{4.35}
+
+\end{solution}
+\begin{solution}{4.36}
+
+\end{solution}
+\begin{solution}{4.37}
+
+\end{solution}
+\begin{solution}{4.38}
+(1)
+$(0.5;0.25;0.25)$
+(3)
+Чтобы игроку было все равно что называть:
+
+$(1-p_1)^2 = p_1^2+(1-p_1-p_2)^2 = p_1^2+p_2^2+(1-p_1-p_2-p_3)^2 =\ldots $
+
+Получаем уравнение:
+$p_{k}^{2}+p_{k+1}^{2}=2p_{k+1}(1-p_{1}-p_{2}-\ldots -p_{k})$
+
+Ищем решение в виде геометрического распределения $p_{k}=\frac{1-p}{p}p^{k}$, получаем уравнение на $p$:\par
+$p^{3}+p^{2}+p-1=0$ \par
+
+(4)  Лотерея оказалась неустойчива к сговору игроков.
+\end{solution}
+\begin{solution}{4.39}
+
+\end{solution}
+\begin{solution}{4.40}
+
+\end{solution}
+\begin{solution}{4.41}
+
+\end{solution}
+\begin{solution}{4.42}
+
+$1-p^{*}a=\left(\frac{c}{a}\right)^{\frac{1}{n-1}}$
+\end{solution}
+\begin{solution}{4.43}
+
+\end{solution}
+\begin{solution}{4.44}
+
+\end{solution}
+\begin{solution}{4.45}
+
+\end{solution}
+\begin{solution}{4.46}
+Если  $f\left(x,a\right)=\frac{x}{a+x} $,  $a>0$,  $x>0$, то  $\frac{\partial f}{\partial x} =\frac{a}{\left(a+x\right)^{2} } $,  $\frac{\partial ^{2} f}{\partial x^{2} } =\frac{-2a}{\left(a+x\right)^{3} } $
+Может вторая производная больше нуля?
+Какова вероятность выигрыша команды с подготовкой  $x$, если известно, что ей придется встретиться с командами с подготовками  $a_{1} $,  $a_{2} $ \ldots  $a_{n} $? \par
+Зависит ли потенциальный партнер команды  $x$  в следующем туре от уровня подготовки команды  $x$?\par
+Верно ли, что вероятность выигрыша команды складывается из подобных слагаемых с какими-то весами? Зависят ли эти веса от  $x$?\par
+Производная этой вероятности в свою очередь распадается на несколько слагаемых\ldots \par
+Может от произведения лучше взять логарифм?
+\end{solution}
+\begin{solution}{4.47}
+
+\end{solution}
+\begin{solution}{4.48}
+
+\end{solution}
+\begin{solution}{4.49}
+\begin{enumerate}
+\item Допустим, что такая ситуация возможна. Заметим, что переход одного школьника в другую школу не меняет среднего уровня школ в этой модели, т.к. имеется континуум школьников. \par
+Машеньке не выгодно отклоняться: $(1+x_{m})(1+\bar{x}_{f})\ge (1+x_{m})(1+\bar{x}_{p})-c$ \par
+Вовочке не выгодно отклоняться: $(1+x_{v})(1+\bar{x}_{f})\le (1+x_{v})(1+\bar{x}_{p})-c$ \par
+Эти неравенства упрощаются до: \par
+$c\le (1+x_{v})(\bar{x}_{p}-\bar{x}_{f})$ \par
+$c\ge (1+x_{m})(\bar{x}_{p}-\bar{x}_{f})$ \par
+Из первого неравенства следует, что $\bar{x}_{p}-\bar{x}_{f}>0$. Это логично, т.к. единственный довод ходить в платную школу в данной модели --- это наличие там умного окружения. \par
+Но $x_{m}>x_{v}$ значит система неравенств не имеет решения. Подобная ситуация невозможна. \par
+\item Из пункта а ) можно сделать вывод: если в равновесии кто-то выбирает платную школу, то все школьники с более высоким уровнем интеллекта также выбирают платную школу. \par
+Отсюда: любое равновесие по Нэшу должно иметь вид: школьники с интеллектом до $x^{*}$ выбирают бесплатную школу, более умные --- платную. Найдем этот $x^{*}$. \par
+Средний контингент бесплатной школы: $\frac{x^{*}}{2}$, в платной --- $\frac{x^{*}+1}{2}$. \par
+Условие при котором школьнику лучше идти в бесплатную: \par
+$(1+x)(1+\frac{x^{*}}{2})\ge (1+x)(1+\frac{x^{*}+1}{2})-c$ \par
+Упрощаем: $x\le 2c-1$. Т.е. $x^{*}=2c-1$. \par
+Вывод: \par
+Если $c<0.5$, то в равновесии все выбирают бесплатную школу. \par
+Если $c>0.5$, то в равновесии школьники с интеллектом $x<2c-1$ выбирают бесплатную школу, а остальные --- платную.
+\end{enumerate}
+\end{solution}
+\begin{solution}{4.50}
+\begin{enumerate}
+\item $(14/3,16/3)$, $(2/3,16/3)$ \par
+\item \ldots, $(0,2)$ \par
+\item  а --- нет, б --- похоже тоже нет
+\end{enumerate}
+\end{solution}
+\begin{solution}{4.51}
+
+(а) равновесия в чистых нет. \par
+(б) Первый игрок должен быть безразличен между усилиями:
+$e_{1}\in [a;b]$. Т.е. $U(e_{1})=U(a)=U(b)$. \par
+Если первый игрок выбирает уровень усилий $e_{1}$, то он
+выигрывает с вероятностью $\int_{0}^{e_{1}}p(t)dt$.
+Следовательно: \par
+$\int_{0}^{e_{1}}p(t)dt-2e_{1}^{2}=0-2a^{2}=1-2b^{2}$ \par
+Поскольку есть стратегия $e_{1}=0$, приносящая полезность 0, любая
+играемая стратегия должна приносить платеж не меньше 0. \par
+Отсюда $a=0$ и $b=1/\sqrt{2}$.
+Взяв производную по $e_{1}$ получаем: \par
+$p(t)=4t$ на отрезке $[0;1/\sqrt{2}]$.
+\end{solution}
+\begin{solution}{4.52}
+(a) $h=1$, $l=0$
+\end{solution}
+\begin{solution}{4.53}
+
+\end{solution}
+\begin{solution}{4.54}
+
+\end{solution}
+\begin{solution}{4.55}
+
+\end{solution}
+\begin{solution}{4.56}
+
+\end{solution}
+\begin{solution}{4.57}
+
+\end{solution}
+\begin{solution}{4.58}
+
+\end{solution}
+\begin{solution}{4.59}
+
+\end{solution}
+\begin{solution}{4.60}
+да, классическая дилемма заключенного
+\end{solution}
+\begin{solution}{4.61}
+ да, конечно
+\end{solution}
+\begin{solution}{4.62}
+а ) да; б ) бесконечное количество; в) да; г) может не быть
+{\red АС: проверить ответы!}
+\end{solution}
+\begin{solution}{4.63}
+
+\end{solution}
+\begin{solution}{4.64}
+
+\end{solution}
+\begin{solution}{4.65}
+
+\end{solution}
+\begin{solution}{4.66}
+
+\end{solution}
+\begin{solution}{4.67}
+
+\end{solution}
+\begin{solution}{4.68}
+
+\end{solution}
+\begin{solution}{4.69}
+
+\end{solution}
+\begin{solution}{4.70}
+
+\end{solution}
+\begin{solution}{4.71}
+
+\end{solution}
+\begin{solution}{4.72}
+Нет.
+\end{solution}
+\begin{solution}{4.73}
+
+\end{solution}
+\begin{solution}{4.74}
+
+\end{solution}
+\begin{solution}{4.75}
+
+\end{solution}
+\begin{solution}{4.76}
+\begin{enumerate}
+\item оптимальной стратегии нет;
+\item Равномерно на $[0;2]$, гарантирует выигрыш с вероятностью не менее 0.5.
+\end{enumerate}
+\end{solution}
+\begin{solution}{4.77}
+
+\end{solution}
+\begin{solution}{4.78}
+
+\end{solution}
+\begin{solution}{4.79}
+
+\end{solution}
+\begin{solution}{4.80}
+ вроде, да
+\end{solution}
+\begin{solution}{4.81}
+Пусть Саша использует функцию плотности $f$, а Алеша --- чистую стратегию $y$. Находим условие безразличия для Алеши. Решаем дифф. уравнение на $f$. Ответ: $f(t)=\ldots t^{-3/2}$ при $t\in[0.25;1]$.
+\end{solution}
+\begin{solution}{4.82}
+Симметричное равновесие Нэша: $0K+\frac{1}{3}N+\frac{1}{3}B+\frac{1}{3}Kol$
+\end{solution}
+\begin{solution}{4.83}
+Игрок: выбирает равновероятно и затем выбирает другую. Ведущий: равновероятно прячет и равновероятно открывает пустую
+\end{solution}
+\begin{solution}{5.1}
+
+\end{solution}
+\begin{solution}{5.2}
+
+\end{solution}
+\begin{solution}{5.3}
+
+\end{solution}
+\begin{solution}{5.4}
+
+\end{solution}
+\begin{solution}{5.5}
+
+\end{solution}
+\begin{solution}{5.6}
+
+\end{solution}
+\begin{solution}{5.7}
+
+\end{solution}
+\begin{solution}{5.8}
+
+\end{solution}
+\begin{solution}{5.9}
+
+\end{solution}
+\begin{solution}{5.10}
+
+\end{solution}
+\begin{solution}{5.11}
+
+\end{solution}
+\begin{solution}{5.12}
+
+\end{solution}
+\begin{solution}{5.13}
+
+\end{solution}
+\begin{solution}{5.14}
+
+\end{solution}
+\begin{solution}{5.15}
+
+\end{solution}
+\begin{solution}{5.16}
+
+\end{solution}
+\begin{solution}{5.17}
+
+\end{solution}
+\begin{solution}{5.18}
+
+\end{solution}
+\begin{solution}{5.19}
+
+\end{solution}
+\begin{solution}{5.20}
+Оптимальная стратегия имеет пороговый вид: если результат первого этапа меньше $x$, то идем на второй этап. Пусть Вася использует стратегию с порогом $a$, а Петя -- с порогом $b$. При фиксированном $a$ Петя выбирает $b$ так, чтобы его вероятность выигрыша $\int_{0}^{1}F_{a}(t)f_{b}(t)dt$ была максимальной. Здесь $F_{a}(t)$ -- функция распределения Васиного итогового результата, а $f_{b}(t)$ -- функция плотности Петиного. Условие первого порядка: $\int_{0}^{1}F_{a}(t)dt-F_{a}(b)=0$,  В паре с уравнением симметричности $a=b$ получаем оптимальный порог $b=\sqrt{2}-1$. Если результаты общеизвестны, то: проигравшему на первом этапе обязательно надо идти на второй, а выигравший идет на второй этап только если его результат меньше 1/2.
+\end{solution}
+\begin{solution}{5.21}
+
+Предположим, что решение задачи, функция $p(v)$ --- возрастающая. \par
+$U(p)=(v-p)(F(v(p))^{n-1}$, максимизируем по $p$ \par
+FOC: $-F(v)=(v-p)(n-1)f(v)\frac{dv}{dp}=0$ \par
+Получаем линейное дифференциальное уравнение на $p(v)$: \par
+$p'+p\frac{(n-1)f(v)}{F(v)}=\frac{(n-1)f(v)v}{F(v)}$ \par
+Решение соответствующего однородного: $p(v)=c(F(v))^{1-n}$ \par
+Начальное условие $p(0)=0$ \par
+Решение неоднородного: \par
+$p(v)=v-\frac{\int_{0}^{v}F^{n-1}(t)dt}{F^{n-1}(v)}$ \par
+Легко проверить, что $p(v)$ получилась возрастающая
+\end{solution}
+\begin{solution}{5.22}
+
+I am searching for the Nash-Equilibrium bid function b(v).
+
+Let's guess. Maybe it's linear? \par
+I verify whether it is of the form $b(v) = c\cdot v$. \par
+How a bidder think? \par
+
+If my value is v and i bid b then my expected profit is:\par
+$E = P($I win$)(v --- E(\frac {cv_{2} + cv_{3} + \ldots + cv_{n}}{n --- 1}|$I win$))$ \par
+Where:\par
+$P($I win$)=P(cv_{2} < b,cv_{3} < b,\ldots,cv_{n} < b)=\left(\frac {b}{c}\right)^{n --- 1}
+E(\frac {cv_{2} + cv_{3} + \ldots + cv_{n}}{n --- 1}|$I win$))=E(cv_{2}|cv_{2}<b)=\frac{b}{2}$\par
+It may be simplyfied to:\par
+$E = \left(\frac {b}{c}\right)^{n --- 1}(v --- \frac {b}{2})$\par
+I maximize it, choosing b and get equation: \par
+$b = v\frac {2(n --- 1)}{n}$. \par
+
+It seems plausible. Because in the case of $n = 2$ it gives $b = v$ (truthful bidding) but in that case this auction is just the second price auction.
+\end{solution}
+\begin{solution}{5.23}
+
+Let's guess.\par
+
+Maybe $f$ is linear? \par
+In that case $b = c\cdot v$. (I prefer $b$ for bid and $v$ for value) \par
+If $v$ is uniform then (for linear f) $b$ is also uniform. \par
+
+While searching for Nash Equilibria one fix the strategies of all other players and find the best response for one selected player. So i fix strategies of all $(n --- 1)$ players as $b_{i} = c\cdot v_{i}$ for $i\in\{2,\ldots,n\}$\par
+
+Let's denote $W$ --- the event <<I Win the auction>>.\par
+
+Expected profit or utility for risk neutral player equals to:
+$E(U) = P(W)\cdot (v --- E(\frac {b + b_{2} + \ldots b_{n}}{n}|W)$
+Here (i am the first player --- just for convinience)
+$P(W) = P(b > b_{2}, b > b_{3}, \ldots, b > b_{n}) = P(cv_{2} < b)\cdot\ldots \cdot P(cv_{n} < b) = \left(\frac {b}{c}\right. \ldots$
+What do we have for $E\left(\frac {b + b_{2} + \ldots b_{n}}{n}|W\right)$?
+Conditionally on $W$ i have:
+$b$ --- is a constant\par
+$b_{2}, \ldots,b_{n}$ are iid on $[0;b]$ (!) and their expected value is $b/2$.
+So $E\left(\frac {b + b_{2} + \ldots b_{n}}{n}|W\right) = \frac {b + (n --- 1)\cdot \frac {b}{2}}{n}$ \par
+
+Plugging this into $E(U)$ and maximizing by b:
+$E(U) = const\cdot b^{n --- 1}(v --- b\frac {n + 1}{2n})$
+$(n --- 1)\frac {1}{b} --- \frac {n + 1}{2n}\frac {1}{v --- b\frac {n + 1}{2n}} = 0$
+Or\par
+$\frac {b}{n --- 1} = v\frac {n + 1}{2n} --- b$\par
+Or\par
+$b = v\cdot \frac {n^2 --- 1}{2n^{2}}$\par
+And it's indeed linear!\par
+
+For large $n$ you bid about one half of the value --- just like in the case of <<average of the others bid>> auction. Because the influence of your bid disappears.
+\end{solution}
+\begin{solution}{5.24}
+
+\end{solution}
+\begin{solution}{5.25}
+б) да; в) $(v_{1},\ldots, v_{n})$, $(v_{1},0,0,\ldots,0)$, $(v_{2},v_{1},0,0,\ldots,0)$
+\end{solution}
+\begin{solution}{5.26}
+
+\end{solution}
+\begin{solution}{5.27}
+
+\end{solution}
+\begin{solution}{5.28}
+
+\end{solution}
+\begin{solution}{5.29}
+
+\end{solution}
+\begin{solution}{6.1}
+Решаем по индукции. Для удобства занумеруем пиратов начиная с самого младшего (номер 1 --- зеленый юнга, \ldots, номер $n$ --- капитан). Если в живых остался один пират, то он предлагает все себе и сам же одобряет этот дележ. Если в живых осталось два пирата ($n=2$), то предлагающий дележ должен все отдать юнге. Иначе юнга не согласится, и по правилам игры дележ не будет одобрен, а неодобренный дележ означает для пирата номер 2 смерть. Если в живых осталось три пирата, то пират номер 3 предлагает все себе. Сам он одобряет этот дележ, юнга одобряет (ему все равно ничего не достанется), только пират номер 2 против. Дележ одобрен. Если осталось $n>3$ пиратов, то пират номер $n$ предлагает все себе. Все пираты кроме пирата номер $(n-1)$ одобряют этот дележ
+\end{solution}
+\begin{solution}{6.2}
+
+ one of possible, the first 44 pirates are thrown overboard, and then P456 offers
+ one gold piece to each of the odd-numbered pirates P1 through P199
+\end{solution}
+\begin{solution}{6.3}
+
+\end{solution}
+\begin{solution}{6.4}
+Вероятность выигрыша для второго игрока --- $5/9$.
+\end{solution}
+\begin{solution}{6.5}
+
+\end{solution}
+\begin{solution}{6.6}
+
+\end{solution}
+\begin{solution}{6.7}
+а )  и б ) первый и последний игроки входят на середину отрезка, остальные --- не входят;
+в)  похоже так же?
+\end{solution}
+\begin{solution}{6.8}
+
+\end{solution}
+\begin{solution}{6.9}
+\end{solution}
+\begin{solution}{6.10}
+
+\end{solution}
+\begin{solution}{6.11}
+
+\end{solution}
+\begin{solution}{6.12}
+ A, C, D, E, H = +; B, F, G, I = -
+\end{solution}
+\begin{solution}{6.13}
+Решаем с конца. Если мы дошли до момента $t=100$, то перед нами одновременная игра. Рисуем ее матрицу, получаем что в ней есть единственное равновесие по Нэшу --- это (требовать, требовать). Рассмотрим $t=99$. Для следующего шага игра уже решена, поэтому перед нами снова матрица два на два. И снова оптимальное поведение для обоих игроков --- требовать деньги. Продолжаем до первого момента времени. Получаем, что единственное SPNE --- это следующая пара стратегий (требовать деньги в каждый момент времени, требовать деньги в каждый момент времени).
+\end{solution}
+\begin{solution}{6.14}
+
+\end{solution}
+\begin{solution}{6.15}
+ Один тигр и одна антилопа -> тигр съедает антилопу. Два тигра и одна антилопа -> тигры не едят антилопу, т.к. иначе за вкус придется заплатить жизнью. По индукции --- при четном числе тигров, тигры воздерживаются от трапезы; при нечетном числе тигров один из тигров ест антилопу, а далее тигры воздерживаются от трапезы.
+\end{solution}
+\begin{solution}{6.16}
+
+\end{solution}
+\begin{solution}{6.17}
+
+\end{solution}
+\begin{solution}{6.18}
+
+\end{solution}
+\begin{solution}{6.19}
+
+\end{solution}
+\begin{solution}{6.20}
+Когда в живых осталось только два игрока, каждый стреляет в единственного противника. Теперь рассмотрим ситуацию, когда все трое живы:
+
+САВ. Если ходит С, то он будет убивать В, так как для С лучше стреляться один на один с А, а не с В.
+
+АСВ. Если ходит А\ldots Вариант раз: А промазал (не важно в кого он целился). В этом случае С убивает В и А остается один на один с С, при этом ход у А.  Вариант два: А целился в В и попал. Тогда С убивает А. Вариант три: А целился в С и попал. Тогда А остается один на один с В. Вариант три лучше, чем вариант два. Значит, если ходит А, то он стреляет в С.
+
+ВАС. Если ходит В\ldots Вариант раз: В промазал (не важно в кого он целился). В этом случае А стреляет в С и С, если жив, стреляет в В. Вариант два: В целился в А и попал. Тогда С убивает В. Вариант три: В целился в С и попал. В остался один на один с С. Вариант три лучше, чем вариант два. Значит, если ходит В, то он стреляет в С.
+
+Считаем вероятности:
+
+САВ. $P=[1/2,0,1/2]$.
+
+АСВ. $P=0.5[1/9,8/9,0]+0.5[1/2,0,1/2]=[11/36,16/36,9/36]$
+
+BAC. $P=0.5[5/9,4/9,0]+0.5[11/36,16/36,9/36]=[31/72,32/72,9/72]$
+
+Мораль для последовательности ВАСВАС\ldots :
+
+Меньше всего шансов выжить у С (самого сильного).
+
+А хотел бы стрелять в воздух (но нельзя), т.к. $31/72>11/36$
+
+В все равно стрелять ли в С или стрелять в воздух, т.к. $32/72=16/36$
+\end{solution}
+\begin{solution}{6.21}
+1 патрон, $p$: \par
+при четном $n$ --- стрелять равновероятно в впереди стоящих \par
+при нечетном $n$ --- стрелять равновероятно в позади стоящих или в воздух (если позади --- никого) \par
+$p_{n,k}=\frac{k-1}{n-1}$ --- вероятность погибнуть для ковбоя номер $k$. (при четном $n$) \par
+бесконечные патроны, $p$: \par
+при четном $n$ --- стрелять равновероятно в остальных \par
+при нечетном $n$ --- стрелять в воздух
+\end{solution}
+\begin{solution}{6.22}
+
+\end{solution}
+\begin{solution}{6.23}
+
+\end{solution}
+\begin{solution}{6.24}
+
+\end{solution}
+\begin{solution}{6.25}
+
+\end{solution}
+\begin{solution}{6.26}
+
+\end{solution}
+\begin{solution}{6.27}
+
+\end{solution}
+\begin{solution}{6.28}
+\[\begin{array}{|c|ccc|}  \hline {} & {\left(ss\right)} & {\left(sk\right)} & {\left(kk\right)} \\  \hline {\left(sss\right)} & {\frac{1}{6} \left(3a-3;3b-2\right)} & {\frac{1}{6} \left(4a-2;2b-1\right)} & {\frac{1}{6} \left(5a-1;b\right)} \\ {\left(ssk\right)} & {\frac{1}{6} \left(2a-2;4b-2\right)} & {\frac{1}{6} \left(4a-2;2b-1\right)} & {\frac{1}{6} \left(5a-1;b\right)} \\ {\left(skk\right)} & {\frac{1}{6} \left(a-1;5b-1\right)} & {\frac{1}{6} \left(a-1;5b-1\right)} & {\frac{1}{6} \left(5a-1;b\right)} \\ {\left(kkk\right)} & {\frac{1}{6} \left(0;6b\right)} & {\frac{1}{6} \left(0;6b\right)} & {\frac{1}{6} \left(0;6b\right)} \\  \hline  \end{array}\]
+\[\begin{array}{|c|ccc|}  \hline {} & {\left(ss\right)} & {\left(sk\right)} & {\left(kk\right)} \\  \hline {\left(ss\right)} & {\frac{1}{5} \left(3a-2;2b-2\right)} & {\frac{1}{5} \left(4a-1;b-1\right)} & {\frac{1}{5} \left(5a;0\right)} \\ {\left(sk\right)} & {\frac{1}{5} \left(2a-1;3b-2\right)} & {\frac{1}{5} \left(4a-1;b-1\right)} & {\frac{1}{5} \left(5a;0\right)} \\ {\left(kk\right)} & {\frac{1}{5} \left(a;4b-1\right)} & {\frac{1}{5} \left(a;4b-1\right)} & {\frac{1}{5} \left(5a;0\right)} \\  \hline  \end{array}\]
+ $\begin{array}{|c|cc|}  \hline {} & {\left(s\right)} & {\left(k\right)} \\  \hline {\left(ss\right)} & {\frac{1}{4} \left(2a-2;2b-1\right)} & {\frac{1}{4} \left(3a-1;b\right)} \\ {\left(sk\right)} & {\frac{1}{4} \left(a-1;3b-1\right)} & {\frac{1}{4} \left(3a-1;b\right)} \\ {\left(kk\right)} & {\frac{1}{4} \left(0;4b\right)} & {\frac{1}{4} \left(0;4b\right)} \\  \hline  \end{array}$  $\begin{array}{|c|cc|}  \hline {} & {\left(s\right)} & {\left(k\right)} \\  \hline {\left(s\right)} & {\frac{1}{3} \left(2a-1;b-1\right)} & {\frac{1}{3} \left(3a;0\right)} \\ {\left(k\right)} & {\frac{1}{3} \left(a;2b-1\right)} & {\frac{1}{3} \left(3a;0\right)} \\  \hline  \end{array}$  $\begin{array}{|c|c|}  \hline {} & {\left(\emptyset \right)} \\  \hline {\left(s\right)} & {\frac{1}{2} \left(a-1;b\right)} \\ {\left(k\right)} & {\frac{1}{2} \left(0;2b\right)} \\  \hline  \end{array}$
+\end{solution}
+\begin{solution}{6.29}
+
+\end{solution}
+\begin{solution}{6.30}
+
+\end{solution}
+\begin{solution}{6.31}
+\end{solution}
+\begin{solution}{6.32}
+
+\end{solution}
+\begin{solution}{6.33}
+
+\end{solution}
+\begin{solution}{6.34}
+
+\end{solution}
+\begin{solution}{6.35}
+
+\end{solution}
+\begin{solution}{6.36}
+
+\end{solution}
+\begin{solution}{6.37}
+
+\end{solution}
+\begin{solution}{6.38}
+
+\end{solution}
+\begin{solution}{6.39}
+
+\end{solution}
+\begin{solution}{6.40}
+ а)  NE: RB, LA; SPNE: LA, б ) RXX-BB, в ) AX-R, г ) LX-AA, RX-AA, LX-AB
+\end{solution}
+\begin{solution}{6.41}
+\end{solution}
+\begin{solution}{6.42}
+Стратегия игрока имеет пороговый вид. Если первая спичка длиннее $a$, то вторую уже не брать. Для двух: $a^{2}=\frac{1}{3}(1-a^{3})$, $a\approx 0.532$
+\end{solution}
+\begin{solution}{6.43}
+нет
+\end{solution}
+\begin{solution}{6.44}
+
+\end{solution}
+\begin{solution}{6.45}
+
+\end{solution}
+\begin{solution}{6.46}
+
+\end{solution}
+\begin{solution}{6.47}
+
+\end{solution}
+\begin{solution}{6.48}
+
+\end{solution}
+\begin{solution}{6.49}
+
+\end{solution}
+\begin{solution}{6.50}
+
+\end{solution}
+\begin{solution}{6.51}
+
+\end{solution}
+\begin{solution}{6.52}
+
+\end{solution}
+\begin{solution}{6.53}
+Занумеруем рабочих. Делаем нумерацию общеизвестной. Публично обещаем уволить <<тунеядца>> с наименьшим номером. Все. В результате: Номеру 1 не выгодно быть тунеядцем --- его уволят не глядя на других. Номеру 2 не выгодно быть тунеядцем, т.к. номер 1 тунеядцем не будет. И т.д.
+\end{solution}
+\begin{solution}{6.54}
+
+Чтобы максимум $p f(\hat{p})+(1-p)f(1-\hat{p})$ был в точке
+$\hat{p}=p$ необходимым условием будет:
+$pf'(p)=(1-p)f'(1-p)$. \par
+Если левую часть обозначить $q(p)$, то получаем уравнение
+$q(p)=q(1-p)$. Берем любую функцию, симметричную относительно
+$1/2$ (останется потом только проверить, что $\hat{p}=p$ --- это
+максимум, а не минимум). Например, подойдет $q(x)=1$, тогда
+получаем $f(x)=\ln(x)$, или $q(x)=2x(1-x)$, тогда получаем
+$f(x)=-x^{2}+2x$
+\end{solution}
+\begin{solution}{6.55}
+
+\end{solution}
+\begin{solution}{6.56}
+
+Пусть зарплата Андрея --- $a$, Бори --- $b$, Васи --- $c$.
+
+Андрей произносит вслух предположение о значении средней зарплаты $M$.
+Боря называет Васе любое число $x$ из промежутка $(0, b-M)$. Вася говорит Андрею число $y=x+c-M$. Андрей говорит Боре число $z= a-M+y$. Боря получил $z = a-M+c-M+x$. Далее он вычитает $x$, прибавляет $b-M$, делит на 3 и прибавляет $M$, получая $\frac{a+b+c}{3}$.
+\end{solution}
+\begin{solution}{6.57}
+
+\end{solution}
+\begin{solution}{6.58}
+
+\end{solution}
+\begin{solution}{6.59}
+
+\end{solution}
+\begin{solution}{6.60}
+
+Разбив время на интервалы по несколько моментов, можно передавать информацию не в виде <<коснулся-не коснулся>>, а целые слова.\par
+Если вычислить солдата, стоящего в центре, то задача разбивается на две задачи меньшей размерности плюс задачка об уведомлении центрального.
+\end{solution}
+\begin{solution}{6.61}
+
+\end{solution}
+\begin{solution}{6.62}
+
+\end{solution}
+\begin{solution}{6.63}
+
+\end{solution}
+\begin{solution}{6.64}
+
+\end{solution}
+\begin{solution}{6.65}
+
+\end{solution}
+\begin{solution}{6.66}
+
+\end{solution}
+\begin{solution}{6.67}
+
+\end{solution}
+\begin{solution}{6.68}
+
+\end{solution}
+\begin{solution}{6.69}
+ 
+\end{solution}
+\begin{solution}{6.70}
+ 
+\end{solution}
+\begin{solution}{6.71}
+
+\end{solution}
+\begin{solution}{6.72}
+
+\end{solution}
+\begin{solution}{6.73}
+
+\end{solution}
+\begin{solution}{6.74}
+
+\end{solution}
+\begin{solution}{6.75}
+
+\end{solution}
+\begin{solution}{6.76}
+
+\end{solution}
+\begin{solution}{6.77}
+
+\end{solution}
+\begin{solution}{6.78}
+
+\end{solution}
+\begin{solution}{6.79}
+
+\end{solution}
+\begin{solution}{6.80}
+
+\end{solution}
+\begin{solution}{6.81}
+
+\end{solution}
+\begin{solution}{6.82}
+
+\end{solution}
+\begin{solution}{6.83}
+
+\end{solution}
+\begin{solution}{6.84}
+
+\end{solution}
+\begin{solution}{6.85}
+
+\end{solution}
+\begin{solution}{6.86}
+
+\end{solution}
+\begin{solution}{6.87}
+
+\end{solution}
+\begin{solution}{6.88}
+
+\end{solution}
+\begin{solution}{6.89}
+
+  $\left\{ak,b,ch,\mu =0\right\}$\par
+
+solution (full): \par
+Слабое секвенциальное равновесие должно удовлетворять нескольким критериям: \par
+1. Если вероятность попасть в информационное множество больше нуля, то веры в нем должны определяться по формуле условной вероятности. \par
+2. Действия игроков должны быть оптимальными в каждом информационном множестве. При этом мы предполагаем, будто бы игра начинается с данного инфо множества, а вероятности каждого конкретного узла заданы верами.\par
+
+У первого 16 стратегий, у второго --- 2 стратегии. Проще искать перебором. (Хотя можно выписать матрицу 16 на 2, найти равновесия по Нэшу и попытаться дополнить их верами).\par
+
+Пусть второй играет b. \par
+Оптимальность действий в верхнем правом узле требует, чтобы там первый выбирал c.\par
+Оптимальность действий в нижнем правом узле требует, чтобы там первый выбирал h.\par
+Оптимальность действий в нижнем левом узле требует, чтобы там первый выбирал k.\par
+Оптимальность действий в верхнем левом узле требует, чтобы там первый выбирал i.\par
+Зная стратегию первого, считаем веры для второго. Веры равны по 0.5.\par
+Проверяем, оптимальность действий второго в его информационном множестве.\par
+При таких верах ожидаемая полезность от хода b равна 2.\par
+При таких верах ожидаемая полезность от хода j равна -1.\par
+Ходить b оптимально.\par
+Итого: chki, b, mu=0.5 --- WSE\par
+Пусть второй играет j. \par
+Оптимальность действий в верхнем правом узле требует, чтобы там первый выбирал c.\par
+Оптимальность действий в нижнем правом узле требует, чтобы там первый выбирал h.\par
+Оптимальность действий в нижнем левом узле требует, чтобы там первый выбирал k.\par
+Оптимальность действий в верхнем левом узле требует, чтобы там первый выбирал a.\par
+Зная стратегию первого, считаем веры для второго. \par
+Веры равны: 0 (вверху) и 1 (внизу).\par
+Проверяем, оптимальность действий второго в его информационном множестве.\par
+При таких верах ожидаемая полезность от хода b равна 2.\par
+При таких верах ожидаемая полезность от хода j равна -5.\par
+Ходить j неоптимально.\par
+Итого: нет WSE таких, что второй играет j.\par
+Ответ: WSE: (chki, b, mu=0.5)
+\end{solution}
+\begin{solution}{6.90}
+
+\end{solution}
+\begin{solution}{6.91}
+
+\end{solution}
+\begin{solution}{6.92}
+
+\end{solution}
+\begin{solution}{6.93}
+
+\end{solution}
+\begin{solution}{6.94}
+
+\end{solution}
+\begin{solution}{6.95}
+
+\end{solution}
+\begin{solution}{6.96}
+
+\end{solution}
+\begin{solution}{6.97}
+
+\end{solution}
+\begin{solution}{6.98}
+нет, нет
+\end{solution}
+\begin{solution}{6.99}
+
+\end{solution}
+\begin{solution}{6.100}
+
+\end{solution}
+\begin{solution}{6.101}
+
+\end{solution}
+\begin{solution}{6.102}
+
+\end{solution}
+\begin{solution}{6.103}
+
+\end{solution}
+\begin{solution}{6.104}
+
+\end{solution}
+\begin{solution}{6.105}
+
+\end{solution}
+\begin{solution}{6.106}
+
+\end{solution}
+\begin{solution}{6.107}
+
+\end{solution}
+\begin{solution}{6.108}
+
+\end{solution}
+\begin{solution}{6.109}
+
+\end{solution}
+\begin{solution}{6.110}
+
+\end{solution}
+\begin{solution}{6.111}
+
+\end{solution}
+\begin{solution}{6.112}
+
+\end{solution}
+\begin{solution}{6.113}
+\end{solution}
+\begin{solution}{6.114}
+
+\end{solution}
+\begin{solution}{6.115}
+
+\end{solution}
+\begin{solution}{6.116}
+
+\end{solution}
+\begin{solution}{6.117}
+
+\end{solution}
+\begin{solution}{6.118}
+
+\end{solution}
+\begin{solution}{6.119}
+
+\end{solution}
+\begin{solution}{6.120}
+$b(x)=\frac{n}{n+1}x$
+\end{solution}
+\begin{solution}{6.121}
+
+\end{solution}
+\begin{solution}{6.122}
+
+\end{solution}
+\begin{solution}{7.1}
+
+\end{solution}
+\begin{solution}{7.2}
+
+\end{solution}
+\begin{solution}{7.3}
+
+\end{solution}
+\begin{solution}{7.4}
+
+\end{solution}
+\begin{solution}{7.5}
+
+\end{solution}
+\begin{solution}{7.6}
+
+\end{solution}
+\begin{solution}{7.7}
+В векторе Шепли производители получают одинаковую сумму $x$, а охранники --- одинаковую сумму $y$. Суммарный заработок равен 6, значит $6x+2y=6$. Заметим, что производитель при его добавлении в коалицию получает 0, если охранника ещё нет, и 1, если охранник уже включен в коалицию. Средний вклад производителя равен вероятности того, что перед ним войдет хотя бы один охранник. Рассмотрим произвольного производителя П. Возможно три принципиальных порядка: ПОО, ОПО, ООП (про остальных производителей мы забываем, т.к. на заработок П они не влияют. Получаем, что средний заработок П равен $2/3$. Отсюда охранники получают по 1.
+
+
+\end{solution}
+\begin{solution}{7.8}
+
+\end{solution}
+\begin{solution}{7.9}
+
+\end{solution}
+\begin{solution}{7.10}
+
+\end{solution}
+\begin{solution}{7.11}
+
+\end{solution}
+\begin{solution}{7.12}
+
+\end{solution}
+\begin{solution}{7.13}
+
+\end{solution}
+\begin{solution}{7.14}
+
+\end{solution}
+\begin{solution}{7.15}
+
+\end{solution}
+\begin{solution}{7.16}
+Ищем вектор Шепли для $n\geq 2$. Все гномы одинаковые, значит и получают одинаково. Общий доход равен $k$ если гномов $2k$ или $2k+1$. Соответственно, вектор Шепли --- это $(0.5,0.5,\ldots )$ для четного $n$ и $(\frac{k}{2k+1},\frac{k}{2k+1},\ldots )$ для $n=2k+1$.
+
+Ищем ядро. Если $n=2$, то ядро это все векторы вида $x_{1}+x_{2}=1$. Рассмотрим случай $n=2k+1>2$. Сумма выигрышей любых $2k$ гномов должна быть больше либо равна $k$, т.е. $x_{1}+x_{2}+\ldots +x_{n}-x_{i}\geq k$ для всех $i$ (без любого гнома можно обойтись). Сложим все $2k+1$ неравенство, получим, что $2k\cdot (x_{1}+x_{2}+\ldots x_{n})\geq (2k+1)k$. С другой стороны $x_{1}+x_{2}+\ldots +x_{n}\leq k$. Противоречие, ядро пусто. Возьмем случай $n=2k>2$. Пусть какому-нибудь гному обещают меньше $v<1/2$. Поскольку любые два гнома могут заработать $1$, то из этого следует, что все остальные гномы должны получать как минимум $1-v>1/2$. Тогда суммарный заработок будет больше $k$, что невозможно. Значит все гномы получают минимум по $1/2$. А больше  --- нет денег. Поэтому при $n=2k$ ядро совпадает с вектором Шепли.
+
+Мораль: вектор Шепли старается делить <<по справедливости>>, т.е. если игроки одинаковые, значит всем поровну. А ядро проверяет <<устойчивость>> дележа. Когда гномов $2k+1$ один гном оказывается не при делах, и он готов на любую уступку, <<да я даже за одну копейку готов нести!>>. И этот гном без ноши мешает договорам других.
+\end{solution}
+\begin{solution}{7.17}
+$\left(\frac{7}{36},\frac{13}{36},\frac{16}{36}\right)$, ядро пусто
+\end{solution}
+\begin{solution}{7.18}
+
+\end{solution}
+\begin{solution}{7.19}
+
+\end{solution}
+\begin{solution}{7.20}
+
+\end{solution}
+\begin{solution}{7.21}
+
+\end{solution}
+\begin{solution}{7.22}
+
+\end{solution}
+\begin{solution}{7.23}
+Например, Волк, Коза и Капуста. У одного игрока --- Волк, у второго --- Коза, у третьего- Капуста. Если их вл
